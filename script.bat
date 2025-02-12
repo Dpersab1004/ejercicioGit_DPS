@@ -12,3 +12,4 @@ echo Has sobrevivido al virus xddd.
 start calc.exe
 ping 127.0.0.1 -n 1 >nul
 goto inicio
+:: Mas elementos que voy a añadir para molestar
