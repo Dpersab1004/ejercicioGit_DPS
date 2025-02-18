@@ -7,7 +7,7 @@ set "veces=1000"
 
 :: Verificar si la imagen existe
 if not exist "%imagen%" (
-    echo ERROR: La imagen no se encuentra en C:\troll.jpg
+    echo ERROR: No te has descargado la imagen bro :-< C:\troll.jpg
     pause
     exit
 )
