@@ -1,0 +1,1 @@
+Este script tiene fines academicos y para probar las diferentes funciones que se pueden hacer en los scripts de Windows.
