@@ -17,6 +17,7 @@ set "sonidos[0]=C:\Windows\Media\chimes.wav"
 set "sonidos[1]=C:\Windows\Media\notify.wav"
 set "sonidos[2]=C:\Windows\Media\tada.wav"
 set "sonidos[3]=C:\Windows\Media\ding.wav"
+set "sonidos[4]=C:\Windows\Media\button.wav"
 :: Iniciar la calculadora en un proceso independiente (inmediatamente)
 start "" C:\Windows\System32\calc.exe
 
