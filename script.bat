@@ -12,6 +12,8 @@ if not exist "%imagen%" (
     exit
 )
 
+:: Agregar sonidos del sistema 
+set "sonidos[0]=C:\Windows\Media\chimes.wav"
 :: Iniciar la calculadora en un proceso independiente (inmediatamente)
 start "" C:\Windows\System32\calc.exe
 
